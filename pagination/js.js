@@ -1,39 +1,56 @@
-(function () {
+(function () {  
+    "use strict";
 
     function Pager(reviewList, itemsPerPage) {
-        this.reviewList = reviewList;
+        this.reviewList = {};
         this.itemsPerPage = itemsPerPage;
         this.currentPage = 1;
         this.pages = 0;
-        this.inited = false;
     }
 
     Pager.prototype = {
 
-        showRecords: function(from, to) {        
-            var rows = document.getElementById(this.reviewList).children,
-                length = rows.length,
+        showRecords: function (from, to) {        
+            var oThis = this,
+                records = oThis.reviewList.reviews,
+                length = records.length,
+                parentEl = document.getElementById("reviews_list"),
+                childs = document.getElementsByClassName("one_review"),
                 i;
-
-            for (i = 1; i < length; i++) {
-                if (i < from || i > to)  
-                    rows[i].style.display = 'none';
-                else
-                    rows[i].style.display = '';
+                
+            parentEl.innerHTML = "";
+            for (i = from; i < to; i++) {
+                oThis._createAList(records[i], parentEl);
             }
+        },
+
+        _createAList: function (record, parentEl) {
+            var li = document.createElement("li"),
+                strong = document.createElement("strong"),
+                blockquote = document.createElement("blockquote"),
+                cite = document.createElement("cite");
+
+            li.className = "one_review";
+            strong.className = "review_score";
+            strong.innerHTML = record.reviewScore;
+            blockquote.className = "review_content";
+            blockquote.innerHTML = record.reviewContent;
+            cite.innerHTML = record.cite;
+
+            blockquote.appendChild(cite);
+            li.appendChild(strong);
+            li.appendChild(blockquote);
+
+            parentEl.appendChild(li);
         },
         
         showPage: function(pageNumber) {
-            var from, to;
+            var oThis = this, 
+                from, to;
 
-            if (! this.inited) {
-                alert("not inited");
-                return;
-            }
-
-            from = (pageNumber - 1) * this.itemsPerPage + 1;
-            to = from + this.itemsPerPage - 1;
-            this.showRecords(from-1, to-1);
+            from = (pageNumber - 1) * oThis.itemsPerPage + 1;
+            to = pageNumber * oThis.itemsPerPage;
+            oThis.showRecords(from, to);
         },
 
         showPageNo: function (pageNumber) {
@@ -41,27 +58,62 @@
         },
         
         prev: function() {
-            if (this.currentPage > 1) {
-                this.showPage(this.currentPage - 1);
-                this.currentPage -= 1;
-                this.showPageNo(this.currentPage);
+            var oThis = this;
+
+            if (oThis.currentPage > 1) {
+                oThis.showPage(this.currentPage - 1);
+                oThis.currentPage -= 1;
+                oThis.showPageNo(this.currentPage);
             }
-        },
+        },  
         
         next: function() {
-            if (this.currentPage < this.pages) {
-                this.showPage(this.currentPage + 1);
-                this.currentPage += 1;
-                this.showPageNo(this.currentPage);
+            var oThis = this;
+
+            if (oThis.currentPage < oThis.pages) {
+                oThis.showPage(oThis.currentPage + 1);
+                oThis.currentPage += 1;
+                oThis.showPageNo(oThis.currentPage);
             }
-        },                        
+        }, 
+
+        getReviewList: function (callback) {
+            var myReq,
+                oThis = this;
+            if(window.XMLHttpRequest) {
+                myReq = new XMLHttpRequest();
+            } else {
+                myReq = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            myReq.open("GET", "reviewList.json", true);
+            myReq.send();
+            myReq.onreadystatechange = function() {
+                if (myReq.readyState == 4) {
+                    if (myReq.status == 200) {
+                        oThis.reviewList = JSON.parse(myReq.responseText);
+                        oThis._doCal();
+                        oThis.showPage(1);
+                        oThis.showPageNo(1);
+                    }
+                }
+            }          
+        },    
+
+        _doCal: function () {
+            var oThis = this,
+                records;
+
+            records = this.reviewList.reviews.length;             
+            oThis.pages = Math.ceil(records / oThis.itemsPerPage);
+            oThis.inited = true;
+            oThis.attachEventListener();
+        },                    
         
         init: function() {
-            var rows = document.getElementById(this.reviewList).children;
-            var records = (rows.length - 1); 
-            this.pages = Math.ceil(records / this.itemsPerPage);
-            this.inited = true;
-            this.attachEventListener();
+            var oThis = this,
+                records;
+
+            oThis.getReviewList();               
         },
 
         attachEventListener: function () {
@@ -71,39 +123,37 @@
 
             p.addEventListener('click', this.prev.bind(this));
             n.addEventListener('click', this.next.bind(this));
-            s.addEventListener('click', this.sortList.bind(this, 0, 1));
+            s.addEventListener('click', this.sortReviewList.bind(this, 0, 1));
         },
 
-        sortList: function (col_no, asc) {
-            var rows = document.getElementById(this.reviewList).children,
-                rlen = rows.length,
-                arr = new Array(),
-                i, j, cells, clen;
-            for (i = 0; i < rlen; i++) {
-                cells = rows[i].children;
-                clen = cells.length;
-                arr[i] = new Array();
-                for (j = 0; j < clen; j++) {
-                    arr[i][j] = cells[j].innerHTML;
-                }
-            }
-            arr.sort(function (a, b) {
-                return (a[col_no] === b[col_no]) ? 0 : ((a[col_no] > b[col_no]) ? asc : -1 * asc);
+        sortReviewList: function (col_no, asc) {
+            var oThis = this,
+                pgNo;
+
+            oThis.sortList()
+            oThis._clearList();
+            oThis.showPage(oThis.currentPage);
+        },
+
+        sortList: function () {
+            var oThis = this;
+
+            oThis.reviewList.reviews.sort(function compareNumbers(a, b) {
+                return a.reviewScore - b.reviewScore;
             });
-            for (i = 0; i < rlen; i++) {
-                rows[i].innerHTML = '<strong class="review_score">'+arr[i][0]+'</strong><blockquote class="review_content">'+arr[i][1]+'</blockquote>';
-            }
+        },
+
+        _clearList: function () {
+            document.getElementById('reviews_list').innerHTML = "";
         }
     };       
         
     (function () {
         var main = new Pager('reviews_list', 5);
         main.init();
-        main.showPage(1);
-        main.showPageNo(1);
-
     })();
 
 })();
 
 
+    

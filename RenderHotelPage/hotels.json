@@ -160,4 +160,328 @@
 				"cite": "Simon Tam"
 			}]																							
 	}
+}, {
+	"name": "Hotel Hyat",
+	"details": {
+		"address": "72b Rue de Awesome, 75001, Paris, France",
+		"images": [{
+			"href": "mg/1_large.jpg",
+			"src": "../img/1_thumb.jpg",
+			"alt": "Description of photo 1"
+			}, {
+			"href": "mg/2_large.jpg",
+			"src": "../img/2_thumb.jpg",
+			"alt": "Description of photo 2"
+			},{
+			"href": "mg/3_large.jpg",
+			"src": "../img/3_thumb.jpg",
+			"alt": "Description of photo 3"
+			},{
+			"href": "mg/4_large.jpg",
+			"src": "../img/4_thumb.jpg",
+			"alt": "Description of photo 4"
+			},{
+			"href": "mg/5_large.jpg",
+			"src": "../img/5_thumb.jpg",
+			"alt": "Description of photo 5"
+			},{
+			"href": "mg/6_large.jpg",
+			"src": "../img/6_thumb.jpg",
+			"alt": "Description of photo 6"
+			},{
+			"href": "mg/7_large.jpg",
+			"src": "../img/7_thumb.jpg",
+			"alt": "Description of photo 7"
+			},{
+			"href": "mg/8_large.jpg",
+			"src": "../img/8_thumb.jpg",
+			"alt": "Description of photo 8"
+			},{
+			"href": "mg/9_large.jpg",
+			"src": "../img/9_thumb.jpg",
+			"alt": "Description of photo 9"
+			},{
+			"href": "mg/10_large.jpg",
+			"src": "../img/10_thumb.jpg",
+			"alt": "Description of photo 10"
+			},{
+			"href": "mg/11_large.jpg",
+			"src": "../img/11_thumb.jpg",
+			"alt": "Description of photo 11"
+			},{
+			"href": "mg/12_large.jpg",
+			"src": "../img/12_thumb.jpg",
+			"alt": "Description of photo 12"
+			},{
+			"href": "mg/13_large.jpg",
+			"src": "../img/13_thumb.jpg",
+			"alt": "Description of photo 13"
+			},{
+			"href": "mg/14_large.jpg",
+			"src": "../img/14_thumb.jpg",
+			"alt": "Description of photo 14"
+			}],
+		"description": ["Located in the heart of Paris, this 5-star hotel offers elegant guest rooms in a Hausmannian-style building. It features a fitness centre, a concierge and a tour desk with ticket service.",
+			"Decorated in a unique style, the air-conditioned guest rooms at the Hotel du Louvre are equipped with satellite TV, a minibar and free Wi-Fi access. Some rooms feature a seating area. All rooms have a private bathroom, some include marble features.",
+			"The hotel restaurant, Brasserie du Louvre, has a traditional Parisian decor and serves traditional French cuisine. A buffet breakfast is served every morning. Guests can also enjoy a cocktail and jazz evenings twice a week in the Defender Bar.",
+			"The 4 facades and terrace of this hotel overlook the famous Louvre Museum, the Opéra Garnier and the Comédie Française theatre.",
+			"Hotel du Louvre is situated 2 minutes from Palais Royal Metro Station, providing direct access to the Champs Elysees and the Place de la Bastille. Public parking is available nearby." ],
+		"facilities": ["Free Wifi",
+				"Swimming Pool",
+				"Gym",
+				"24/7 reception",
+				"Concierge",
+				"Restaurant",
+				"Free Parking",
+				"Shoe-Shine",
+				"Satellite TV",
+				"Room Service"],
+		"roomsDetails": [{
+					"RoomName": "Basic 2 Bed",
+					"Occupancy": "2",
+					"PricePerRoom": "&euro;88.99",
+					"NoOfRooms": [1,2,3,4,5]
+				}, {
+					"RoomName": "Basic Family Room",
+					"Occupancy": "4",
+					"PricePerRoom": "&euro;98.99",
+					"NoOfRooms": [1,2,3,4,5]
+				}, {
+					"RoomName": "Delux 2 Bed",
+					"Occupancy": "2",
+					"PricePerRoom": "&euro;109.99",
+					"NoOfRooms": [1,2,3,4,5]
+				}, {
+					"RoomName": "Delux Famliy Room",
+					"Occupancy": "7",
+					"PricePerRoom": "&euro;112.99",
+					"NoOfRooms": [1,2,3,4,5]
+				}, {
+					"RoomName": "Bridal Suite",
+					"Occupancy": "2",
+					"PricePerRoom": "&euro;167.99",
+					"NoOfRooms": [1,2,3,4,5]
+				}, {
+					"RoomName": "President Suite",
+					"Occupancy": "2",
+					"PricePerRoom": "&euro;301.99",
+					"NoOfRooms": [1,2,3,4,5]
+				}, {
+					"RoomName": "One+One",
+					"Occupancy": "2",
+					"PricePerRoom": "&euro;78.99",
+					"NoOfRooms": [1,2,3,4,5]
+				}, {
+					"RoomName": "Single Room",
+					"Occupancy": "1",
+					"PricePerRoom": "&euro;28.99",
+					"NoOfRooms": [1,2,3,4,5]
+				}, {
+					"RoomName": "Queen Room",
+					"Occupancy": "2",
+					"PricePerRoom": "&euro;99.99",
+					"NoOfRooms": [1,2,3,4,5]
+				}, {
+					"RoomName": "Basement 1 Bed",
+					"Occupancy": "2",
+					"PricePerRoom": "&euro;9.99",
+					"NoOfRooms": [1,2,3,4,5]
+				}, {
+					"RoomName": "Mega XL Suite",
+					"Occupancy": "9",
+					"PricePerRoom": "&euro;412.99",
+					"NoOfRooms": [1,2,3,4,5]
+				}],
+		"reviews": [{
+				"reviewScore": 5,
+				"reviewContent": "Pellentesque ligula nibh, lacinia eget pharetra ut, vulputate vitae odio. Donec non mattis nisi. Pellentesque elit leo, tincidunt nec felis vitae, aliquet imperdiet purus. In elit ante, vestibulum non accumsan at, volutpat eget dolor. Quisque ut tincidunt elit. Curabitur rutrum dignissim enim ac aliquet. Curabitur et aliquam nisl.",
+				"cite": "Malcolm Reynolds"
+			}, {
+				"reviewScore": 8,
+				"reviewContent": "Duis ac nisi id lorem rhoncus tempus eu sit amet nisi. Aenean ultrices congue ligula, ac molestie velit ultricies a. Nulla ac nunc et nisi placerat interdum sit amet ut erat. Integer vulputate nulla id orci cursus, eget ullamcorper justo ultricies. Nulla lorem dui, euismod non porttitor eu, sagittis in lacus. In suscipit lectus non viverra luctus. Pellentesque egestas, dolor at luctus eleifend, velit dui viverra risus, ac rutrum sapien ante at massa. Donec imperdiet consequat laoreet.",
+				"cite": "Zoe Washburne"
+			}, {
+				"reviewScore":3,
+				"reviewContent": "Etiam posuere, magna sit amet ullamcorper auctor, odio urna tempor velit, sit amet tincidunt lorem diam a velit. Integer a dapibus nunc. In iaculis vel sem ut gravida.",
+				"cite": "Hoban Washburne"
+			}, {
+				"reviewScore": 10,
+				"reviewContent": "Etiam condimentum sodales dui in vestibulum. Vivamus euismod egestas porttitor. Proin dictum tempor euismod. Suspendisse elit nulla, elementum eu ornare in, tempus in massa. Proin elit sem, posuere nec tempor eget, suscipit sit amet dui. Aliquam in vehicula lorem. Praesent vitae vestibulum ante, nec vestibulum metus. Morbi commodo diam in leo semper ornare. Phasellus et diam magna.",
+				"cite": "Inara Serra"
+			}, {
+				"reviewScore": 9,
+				"reviewContent": "Maecenas cursus ut erat vitae vestibulum. Fusce feugiat dignissim augue consequat condimentum. Donec risus felis, ultricies a velit sed, varius ullamcorper enim. Suspendisse ultrices non tortor non lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+				"cite": "Jayne Cobb"
+			}, {
+				"reviewScore": 4,
+				"reviewContent": "Donec adipiscing lacus sed neque cursus ullamcorper. Vestibulum tellus lectus, molestie vitae augue et, egestas convallis mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec porttitor mi vitae mauris aliquam, non accumsan odio tincidunt. Aliquam semper enim quam, ac cursus lectus dignissim vitae. Suspendisse nec rutrum ligula.",
+				"cite": "Kaylee Frye"
+			}, {
+				"reviewScore": 7,
+				"reviewContent": "Nullam et leo placerat lectus fringilla varius vel a lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nibh eros, blandit at aliquam eu, ullamcorper eu diam. Etiam id viverra lacus, rutrum suscipit nulla. Maecenas adipiscing, mi sit amet iaculis congue, urna massa vestibulum tortor, a tempus nibh tortor id dui.",
+				"cite": "Simon Tam"
+			}]																							
+	}
+}, {
+	"name": "Hotel Sun-n-Sand",
+	"details": {
+		"address": "72b Rue de Awesome, 75001, Paris, France",
+		"images": [{
+			"href": "mg/1_large.jpg",
+			"src": "../img/1_thumb.jpg",
+			"alt": "Description of photo 1"
+			}, {
+			"href": "mg/2_large.jpg",
+			"src": "../img/2_thumb.jpg",
+			"alt": "Description of photo 2"
+			},{
+			"href": "mg/3_large.jpg",
+			"src": "../img/3_thumb.jpg",
+			"alt": "Description of photo 3"
+			},{
+			"href": "mg/4_large.jpg",
+			"src": "../img/4_thumb.jpg",
+			"alt": "Description of photo 4"
+			},{
+			"href": "mg/5_large.jpg",
+			"src": "../img/5_thumb.jpg",
+			"alt": "Description of photo 5"
+			},{
+			"href": "mg/6_large.jpg",
+			"src": "../img/6_thumb.jpg",
+			"alt": "Description of photo 6"
+			},{
+			"href": "mg/7_large.jpg",
+			"src": "../img/7_thumb.jpg",
+			"alt": "Description of photo 7"
+			},{
+			"href": "mg/8_large.jpg",
+			"src": "../img/8_thumb.jpg",
+			"alt": "Description of photo 8"
+			},{
+			"href": "mg/9_large.jpg",
+			"src": "../img/9_thumb.jpg",
+			"alt": "Description of photo 9"
+			},{
+			"href": "mg/10_large.jpg",
+			"src": "../img/10_thumb.jpg",
+			"alt": "Description of photo 10"
+			},{
+			"href": "mg/11_large.jpg",
+			"src": "../img/11_thumb.jpg",
+			"alt": "Description of photo 11"
+			},{
+			"href": "mg/12_large.jpg",
+			"src": "../img/12_thumb.jpg",
+			"alt": "Description of photo 12"
+			},{
+			"href": "mg/13_large.jpg",
+			"src": "../img/13_thumb.jpg",
+			"alt": "Description of photo 13"
+			},{
+			"href": "mg/14_large.jpg",
+			"src": "../img/14_thumb.jpg",
+			"alt": "Description of photo 14"
+			}],
+		"description": ["Located in the heart of Paris, this 5-star hotel offers elegant guest rooms in a Hausmannian-style building. It features a fitness centre, a concierge and a tour desk with ticket service.",
+			"Decorated in a unique style, the air-conditioned guest rooms at the Hotel du Louvre are equipped with satellite TV, a minibar and free Wi-Fi access. Some rooms feature a seating area. All rooms have a private bathroom, some include marble features.",
+			"The hotel restaurant, Brasserie du Louvre, has a traditional Parisian decor and serves traditional French cuisine. A buffet breakfast is served every morning. Guests can also enjoy a cocktail and jazz evenings twice a week in the Defender Bar.",
+			"The 4 facades and terrace of this hotel overlook the famous Louvre Museum, the Opéra Garnier and the Comédie Française theatre.",
+			"Hotel du Louvre is situated 2 minutes from Palais Royal Metro Station, providing direct access to the Champs Elysees and the Place de la Bastille. Public parking is available nearby." ],
+		"facilities": ["Free Wifi",
+				"Swimming Pool",
+				"Gym",
+				"24/7 reception",
+				"Concierge",
+				"Restaurant",
+				"Free Parking",
+				"Shoe-Shine",
+				"Satellite TV",
+				"Room Service"],
+		"roomsDetails": [{
+					"RoomName": "Basic 2 Bed",
+					"Occupancy": "2",
+					"PricePerRoom": "&euro;88.99",
+					"NoOfRooms": [1,2,3,4,5]
+				}, {
+					"RoomName": "Basic Family Room",
+					"Occupancy": "4",
+					"PricePerRoom": "&euro;98.99",
+					"NoOfRooms": [1,2,3,4,5]
+				}, {
+					"RoomName": "Delux 2 Bed",
+					"Occupancy": "2",
+					"PricePerRoom": "&euro;109.99",
+					"NoOfRooms": [1,2,3,4,5]
+				}, {
+					"RoomName": "Delux Famliy Room",
+					"Occupancy": "7",
+					"PricePerRoom": "&euro;112.99",
+					"NoOfRooms": [1,2,3,4,5]
+				}, {
+					"RoomName": "Bridal Suite",
+					"Occupancy": "2",
+					"PricePerRoom": "&euro;167.99",
+					"NoOfRooms": [1,2,3,4,5]
+				}, {
+					"RoomName": "President Suite",
+					"Occupancy": "2",
+					"PricePerRoom": "&euro;301.99",
+					"NoOfRooms": [1,2,3,4,5]
+				}, {
+					"RoomName": "One+One",
+					"Occupancy": "2",
+					"PricePerRoom": "&euro;78.99",
+					"NoOfRooms": [1,2,3,4,5]
+				}, {
+					"RoomName": "Single Room",
+					"Occupancy": "1",
+					"PricePerRoom": "&euro;28.99",
+					"NoOfRooms": [1,2,3,4,5]
+				}, {
+					"RoomName": "Queen Room",
+					"Occupancy": "2",
+					"PricePerRoom": "&euro;99.99",
+					"NoOfRooms": [1,2,3,4,5]
+				}, {
+					"RoomName": "Basement 1 Bed",
+					"Occupancy": "2",
+					"PricePerRoom": "&euro;9.99",
+					"NoOfRooms": [1,2,3,4,5]
+				}, {
+					"RoomName": "Mega XL Suite",
+					"Occupancy": "9",
+					"PricePerRoom": "&euro;412.99",
+					"NoOfRooms": [1,2,3,4,5]
+				}],
+		"reviews": [{
+				"reviewScore": 5,
+				"reviewContent": "Pellentesque ligula nibh, lacinia eget pharetra ut, vulputate vitae odio. Donec non mattis nisi. Pellentesque elit leo, tincidunt nec felis vitae, aliquet imperdiet purus. In elit ante, vestibulum non accumsan at, volutpat eget dolor. Quisque ut tincidunt elit. Curabitur rutrum dignissim enim ac aliquet. Curabitur et aliquam nisl.",
+				"cite": "Malcolm Reynolds"
+			}, {
+				"reviewScore": 8,
+				"reviewContent": "Duis ac nisi id lorem rhoncus tempus eu sit amet nisi. Aenean ultrices congue ligula, ac molestie velit ultricies a. Nulla ac nunc et nisi placerat interdum sit amet ut erat. Integer vulputate nulla id orci cursus, eget ullamcorper justo ultricies. Nulla lorem dui, euismod non porttitor eu, sagittis in lacus. In suscipit lectus non viverra luctus. Pellentesque egestas, dolor at luctus eleifend, velit dui viverra risus, ac rutrum sapien ante at massa. Donec imperdiet consequat laoreet.",
+				"cite": "Zoe Washburne"
+			}, {
+				"reviewScore":3,
+				"reviewContent": "Etiam posuere, magna sit amet ullamcorper auctor, odio urna tempor velit, sit amet tincidunt lorem diam a velit. Integer a dapibus nunc. In iaculis vel sem ut gravida.",
+				"cite": "Hoban Washburne"
+			}, {
+				"reviewScore": 10,
+				"reviewContent": "Etiam condimentum sodales dui in vestibulum. Vivamus euismod egestas porttitor. Proin dictum tempor euismod. Suspendisse elit nulla, elementum eu ornare in, tempus in massa. Proin elit sem, posuere nec tempor eget, suscipit sit amet dui. Aliquam in vehicula lorem. Praesent vitae vestibulum ante, nec vestibulum metus. Morbi commodo diam in leo semper ornare. Phasellus et diam magna.",
+				"cite": "Inara Serra"
+			}, {
+				"reviewScore": 9,
+				"reviewContent": "Maecenas cursus ut erat vitae vestibulum. Fusce feugiat dignissim augue consequat condimentum. Donec risus felis, ultricies a velit sed, varius ullamcorper enim. Suspendisse ultrices non tortor non lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+				"cite": "Jayne Cobb"
+			}, {
+				"reviewScore": 4,
+				"reviewContent": "Donec adipiscing lacus sed neque cursus ullamcorper. Vestibulum tellus lectus, molestie vitae augue et, egestas convallis mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec porttitor mi vitae mauris aliquam, non accumsan odio tincidunt. Aliquam semper enim quam, ac cursus lectus dignissim vitae. Suspendisse nec rutrum ligula.",
+				"cite": "Kaylee Frye"
+			}, {
+				"reviewScore": 7,
+				"reviewContent": "Nullam et leo placerat lectus fringilla varius vel a lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nibh eros, blandit at aliquam eu, ullamcorper eu diam. Etiam id viverra lacus, rutrum suscipit nulla. Maecenas adipiscing, mi sit amet iaculis congue, urna massa vestibulum tortor, a tempus nibh tortor id dui.",
+				"cite": "Simon Tam"
+			}]																							
+	}
 }]
